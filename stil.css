@@ -1,18 +1,27 @@
-
-body{
-	background-color: #fcc;
+body {
+  background-color: #fcc;
+	font-family: sans-serif;
 }
-#main{
-	margin:100px;
-	margin:100px auto;
-	padding: 30px;
-	background-color: #daa;
+
+#main {
+  margin: 100px;
+  padding: 40px;
+	border: 12px dotted red;
+  background-color: #daa;
 	min-width: 300px;
 	max-width: 500px;
 }
-
-#meny{
-	border: 1px solid black;
-	background-color: ddd;
-	max-width: 200px;
+#meny {
+  width: auto;
+	border-radius: 2px;
+}
+#meny ul li a {
+	text-decoration: none;
+}
+#meny ul li {
+background-color: #cddc39;
+	list-style-type:none;
+	display: inline-block;
+	padding: 2px;
+	width: 100px;
 }
