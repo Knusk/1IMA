@@ -1,0 +1,14 @@
+
+
+#main{
+	margin:150px;
+	padding: 30px;
+	background-color: #caa;
+	min-width: 300px;
+}
+
+#meny{
+	border: 1px solid black;
+	background-color: ddd;
+	max-width: 200px;
+}
