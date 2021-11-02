@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Sirkler</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="styles.css">
 
   </head>
@@ -10,15 +10,21 @@
 
   <canvas id="canvas" width="400" height="400"></canvas>
   </body>
+    <div>Test</div>
 <script type="text/javascript">const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-   
-    var intervalID = setInterval(circleDraw, 10);
+   var evt=document.getElementsByTagName('div');
+    evt[0].addEventListener("click", setInter); 
+    
+  function setInter(){
+            intervalID = setInterval(circleDraw, 10);}
     var s=0;
     var sStep=0.05;
    
-    function circleDraw(){
+    function circleDraw(s_){
+        
+        
     void ctx.clearRect(0, 0, 400, 400);
     // void ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle [, counterclockwise]); 
 // Draw the ellipse
@@ -47,6 +53,7 @@ const ctx = canvas.getContext('2d');
         if (s>Math.PI*2*2){
             console.log("Time Out!");
             clearInterval(intervalID);
+            s=0;
             return false;
         }
     }
